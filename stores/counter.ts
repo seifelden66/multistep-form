@@ -15,3 +15,18 @@ export const useCounterStore = defineStore('counter', {
       },
   },
 })
+// export const useSub = defineStore('counter', {
+//   state: () => {
+//     return { val: 'monthly' }
+//   },
+
+//   actions: {
+//     yearly() {
+//       this.val != 'yearly'
+//     },
+//     monthly() {
+//       this.val != 'monthly'
+//     }
+    
+//   },
+// })

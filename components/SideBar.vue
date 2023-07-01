@@ -11,14 +11,15 @@
                         p {{i.title}}
                     .btm 
                         h6 {{ i.content }}
+                  
                 
            
 
 </template>
 
 <script setup lang="ts">
-import { useCounterStore } from '@/stores/counter'
-const counter = useCounterStore()
+import { useCounterStore } from "@/stores/counter";
+const counter = useCounterStore();
 const data = [
   {
     title: "STEP 1",
@@ -40,25 +41,18 @@ const data = [
     id: 4,
     content: "SUMMARY",
   },
-  
-
 ];
-
-;p--pl;;l 
 </script>
 
 <style scoped lang="scss">
 .sidebar {
+  padding: 1em;
   margin: auto 5px;
   color: white;
-  border-radius: 10px;
-  background: url("../assets/images/bg-sidebar-desktop.svg");
-  background-size: cover;
-  width: 60%;
-  height: 90%;
-  background-repeat: no-repeat;
-
+ 
   
+
+
   aside {
     .container {
       section {
@@ -74,34 +68,41 @@ const data = [
           display: flex;
           align-items: center;
           justify-content: center;
-          
         }
-        .active{
+        .active {
           background: orange;
         }
         .right {
           line-height: 22px;
-          p{
+          p {
             color: hsl(231, 11%, 63%);
             font-weight: 300;
-        }
+          }
         }
       }
     }
   }
 }
 @media (max-width:768px) {
-  .container{
-    section{
-      
-      .left{
+  .sidebar{
+
+    aside{
+      .container{
         display: flex;
-        flex-direction: row;
-      }
-      .right{
-        display: none;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          
+        section{
+          margin-top: 10px !important;
+          .right{
+            display: none;
+          }
+        }
       }
     }
   }
+
 }
+ 
 </style>

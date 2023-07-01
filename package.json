@@ -21,6 +21,7 @@
     "@pinia/nuxt": "^0.4.11",
     "@vee-validate/nuxt": "^4.9.6",
     "@vee-validate/rules": "^4.9.6",
+    "@vee-validate/yup": "^4.10.2",
     "bootstrap": "^5.3.0",
     "bootstrap-vue": "^2.23.1",
     "pinia": "^2.1.4",

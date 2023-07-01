@@ -39,9 +39,9 @@ const onSubmit = handleSubmit((values) => {
             | {{ errors.email }}
       .sec 
         label(for="phoneNumber") Phone Number
-        InputText#phoneNumber(v-bind="phoneNumber" aria-describedby="phoneNumber-help" :class="{ 'p-invalid': errors.phoneNumber }")
+        InputText#phoneNumber(v-bind="phoneNumber" aria-describedby="phoneNumber-help" :class="{ 'p-invalid': errors.phoneNumber }" )
         small#phoneNumber-help.p-error
-            | {{ errors.phoneNumber }}        
+            | {{ errors.phoneNumber ? 'Invalid phone number.' : '' }}       
       button next step
       
 </template>

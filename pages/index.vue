@@ -4,15 +4,12 @@
     Step1/
 
   div(v-if="counter.count === 2")
-    h1 hello from 2
-    button(@click="counter.increment()") next
-    button(@click="counter.decrement") back
+    Step2/
   div(v-if="counter.count === 3")
-    h1  from 3
-    button(@click="counter.increment()") next
-    button(@click="counter.decrement") back
+    Step3/
+    
   div(v-if="counter.count === 4")
-    h1 hello from 4
+    Step4/
     
     button(@click="counter.decrement") back
 
@@ -32,13 +29,7 @@ const counter = useCounterStore()
 .container{
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  width: 100vw;
+ 
 }
-@media (max-width:768px) {
-    .container{
-      display: flex;
-      
-    }
-}
+
 </style>
