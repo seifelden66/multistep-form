@@ -1,14 +1,14 @@
 <template lang="pug">
 .contaner
     .top 
-        
+        img(:src="image")
     .bot 
         h1(style="color: hsl(213, 96%, 18%); fontWeight:700") Thank you!
         p(style="color:hsl(231, 11%, 63%)") Thanks for confirming your subscription! We hhope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com
 </template>
 
 <script setup lang="ts">
-
+const image = 'iconthankyou.svg'
 
 </script>
 
