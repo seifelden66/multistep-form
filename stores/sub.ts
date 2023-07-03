@@ -6,21 +6,21 @@ export const useSub = defineStore('sub', {
         {
           id: 1,
           name: 'arcade',
-          image: 'icon-arcade.svg',
+          image: 'iconarcade.svg',
           yearly: 90,
           monthly: 9
         },
         {
           id: 2,
           name: 'advanced',
-          image: 'icon-advanced.svg',
+          image: 'iconadvanced.svg',
           yearly: 120,
           monthly: 12
         },
         {
           id: 3,
           name: 'pro',
-          image: 'icon-pro.svg',
+          image: 'iconpro.svg',
           yearly: 150,
           monthly: 15
         },
