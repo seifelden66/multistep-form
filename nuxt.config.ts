@@ -27,9 +27,7 @@ export default defineNuxtConfig({
   ],
   build: {
     transpile: ['primevue'],
-    rollupOptions: {
-      external: ['iconthankyou.svg'],
-    },
+   
   },
   
 })
