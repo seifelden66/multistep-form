@@ -1,5 +1,5 @@
 <template lang="pug">
-.container
+.container-fluid
   .div1(v-if="counter.count === 1")
     Step1/
 
@@ -10,8 +10,11 @@
     
   div(v-if="counter.count === 4")
     Step4/
+  
+  div(v-if="counter.count === 5")
+    Step5/
     
-    button(@click="counter.decrement") back
+    
 
  
  
@@ -26,7 +29,7 @@ const counter = useCounterStore()
 </script>
 
 <style scoped lang="scss">
-.container{
+.container-fluid{
   display: flex;
   justify-content: center;
  

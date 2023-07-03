@@ -5,7 +5,7 @@
       p You have the option of monthly or yearly billing 
     .form 
       .items
-        button.item(v-for="i in data" :key="i.id" @click="selectItem(i)" :class="{ active: selectedItemId === i.id }")
+        button.item(v-for="i in toggleSwitch.plans" :key="i.id" @click="toggleSwitch.selectItem(i)" :class="{ active: toggleSwitch.selectedItemId === i.id }")
           .image
             img(:src="i.image")
           .cont
@@ -24,7 +24,7 @@
       .bottom
         button.btn2(@click="counter.decrement") 
             h5 Go back
-        button.btn(@click="counter.increment" :disabled="selectedItemId === null") next step
+        button.btn(@click="counter.increment" :disabled="toggleSwitch.selectedItemId === null") next step
         
         
     
@@ -37,33 +37,8 @@ import { useCounterStore } from '@/stores/counter'
 const counter = useCounterStore()
 const toggleSwitch = useSub()
 
-const data = [
-  {
-    id: 1,
-    name: 'arcade',
-    image: 'icon-arcade.svg',
-    yearly: 90,
-    monthly:9
-  },
-  {
-    id: 2,
-    name: 'advanced',
-    image: 'icon-advanced.svg',
-    yearly: 120,
-    monthly:12
-  },
-  {
-    id: 3,
-    name: 'pro',
-    image: 'icon-pro.svg',
-    yearly: 150,
-    monthly:15
-  },
-]
-const selectedItemId = ref(null);
-const selectItem = (item) => {
-  selectedItemId.value = item.id;
-};
+
+
 </script>
 
 <style lang="scss" scoped>

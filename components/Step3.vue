@@ -4,7 +4,7 @@
         h1(style="color: hsl(213, 96%, 18%)") pick add-ones
         p(style="color:hsl(231, 11%, 63%)") Add-ones help enhance your gaming experience
     .middle 
-        button.item(v-for="i in data" :key="i.id" @click="toggleSelectItem(i)" :class="{ active: isSelected(i) }")
+        button.item(v-for="i in data.extra" :key="i.id" @click="data.toggleSelectItem(i)" :class="{ active:data. isSelected(i) }")
             .cont
                 .left
                     h5(style="color: hsl(213, 96%, 18%)") {{ i.name }}
@@ -23,44 +23,11 @@
 <script setup lang="ts">
 import {useSub} from '@/stores/sub'
 import { useCounterStore } from '@/stores/counter'
+import {useAddones} from '@/stores/addones'
+const data = useAddones()
 const counter = useCounterStore()
 const toggleSwitch = useSub()
-const data =[
-    {
-        id: 1,
-        name:'online service',
-        content: 'Access to multiplayer games',
-        month: 1,
-        yearly: 10,
-        selected: false
-    },
-    {
-        id: 2,
-        name:'larger storage',
-        content: 'Extra 1TB of cloud save',
-        month: 2,
-        yearly: 20,
-        selected: false
-    },
-    {
-        id: 3,
-        name:'customizable profile ',
-        content: 'custom theme of your profile',
-        month: 2,
-        yearly: 20,
-        selected: false
-    }
-]
-const selectedItemIds = ref([]);
-const toggleSelectItem = (item) => {
-  item.selected = !item.selected;
-  if (item.selected) {
-    selectedItemIds.value.push(item.id);
-  } else {
-    selectedItemIds.value = selectedItemIds.value.filter((id) => id !== item.id);
-  }
-};
-const isSelected = (item) => selectedItemIds.value.includes(item.id);
+
 
 </script>
 

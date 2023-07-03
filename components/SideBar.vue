@@ -70,7 +70,9 @@ const data = [
           justify-content: center;
         }
         .active {
-          background: orange;
+          background: hsl(206, 94%, 87%);
+          color: black;
+          font-weight: 600;
         }
         .right {
           line-height: 22px;
