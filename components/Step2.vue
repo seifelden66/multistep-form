@@ -65,10 +65,11 @@ p {
         }
         position: relative;
         padding: 1em;
-        width: 9.5em;
-        height: 11em;
+        width: 9em;
+        height: 10em;
         .image {
           position: absolute;
+          height: 3em;
           top: 7px;
           left: 10px;
         }
@@ -163,7 +164,7 @@ p {
       .items{
         grid-template-columns: 1fr;
         .item{
-          height: 6em;
+          height: 7em;
           width: 100%;
           display: flex;
           flex-direction: row;

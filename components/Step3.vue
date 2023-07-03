@@ -33,6 +33,9 @@ const toggleSwitch = useSub()
 
 <style scoped lang="scss">
 .contaner{
+    .up{
+        margin-top: 1em;
+    }
     .middle{
         display: grid;
         margin: 1em auto;
@@ -55,6 +58,7 @@ const toggleSwitch = useSub()
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
+                    text-align: left;
                     float: left;
                 }
             }

@@ -20,21 +20,22 @@
     display: flex;
     align-items: center;
     align-self: center;
-    min-height: 70vh;
-    margin-top: 5em;
+    min-height: 72vh;
+    margin-top: 2.5em;
     border-radius: 10px;
-    width: 900px;
-    
+    width: 950px;
+    gap: 1em;
     background: white;
     .side {
       background-image: url(../assets//images/bg-sidebar-desktop.svg);
-      height: 35em;
-      width: 35%;
+      height: 30em;
+      background-repeat: no-repeat;
+      width: 37%;
       border-radius: 10px;
     }
     .div {
       width: 100%;
-      margin: 0 auto;
+      
     }
   }
 }
@@ -43,7 +44,7 @@
   .container-fluid {
     z-index: 0;
     .container {
-      
+      margin-top: 5em;
       .side {
         background-image: url(../assets//images/bg-sidebar-mobile.svg);
         background-size: cover;

@@ -41,13 +41,13 @@ const toggleSwitch = useSub();
 
 <style scoped lang="scss">
 .contaner {
- margin-top: 2em;
+ margin-top: 1em;
 
   .middle {
-    margin: 2em auto;
+    margin: 1em auto;
     background: hsl(217, 100%, 97%);
     .item {
-      margin: 1em auto;
+      margin: .5em auto;
       padding: 1em;
       display: flex;
       align-items: center;
