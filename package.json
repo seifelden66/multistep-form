@@ -28,6 +28,7 @@
     "primeicons": "^6.0.1",
     "primevue": "^3.29.2",
     "pug": "^3.0.2",
+    "rollup": "^3.26.0",
     "sass": "^1.63.4",
     "scss": "^0.2.4",
     "vee-validate": "^4.9.6"
